@@ -1,33 +1,33 @@
-# 更新影響、回饋與申訴
+# Update impacts, feedback, and appeals
 
-使用者要求分析排名／流量變動，或準備回饋時載入。整理基準：2026-11-26
+Load when the user requests ranking or traffic change analysis, or feedback preparation. Reference baseline: 2026-11-26
 
-## 確認事件與資料
+## Verify the event and data
 
-1. 讀 [Google 排名更新通知](https://developers.google.com/search/docs/ranking/stay-informed) 與 [Search Status Dashboard](https://status.search.google.com/)，再開該次事件的直接網址，記錄預告、開始、完成及時區
-2. 區分預告與實際推出。適用地區、語言、時間依該事件公告；英國的通知要求依官方引用的 CMA 適用條件
-3. 核心更新的正式影響評估，依 [核心更新指南](https://developers.google.com/search/docs/appearance/core-updates#check-if-theres-a-traffic-drop-in-search-console)，等完成推出後累積至少完整一週，再與推出前適當期間比較；早期快照記錄觀察時段及資料成熟度
-4. 在累積資料期間，繼續查可即時確認的服務、存取、索引與量測異常
+1. Read [ranking update notices](https://developers.google.com/search/docs/ranking/stay-informed) and the [Search Status Dashboard](https://status.search.google.com/), then open the specific event's direct URL. Record the preannouncement, rollout start, completion, and timezone
+2. Distinguish preannouncements from actual rollout. Use the event notice for applicable locations, languages, and timing; apply UK notice requirements according to the conditions in Google's linked CMA source
+3. For formal core-update impact analysis, follow the [core update guide](https://developers.google.com/search/docs/appearance/core-updates#check-if-theres-a-traffic-drop-in-search-console): wait for rollout completion and at least one full week of subsequent data, then compare an appropriate pre-rollout period. Record the observation window and data maturity for early snapshots
+4. While data accumulates, continue investigating service, access, indexing, and measurement issues that can be checked immediately
 
-## 分析方法
+## Analysis method
 
-先確認正確網站、帳戶、期間、時區與篩選，再分析點擊、曝光、CTR、排名及實際轉換資料。依頁面、查詢、國家、裝置與搜尋類型找出變化範圍，檢查資料異常、季節需求、網站變更及索引問題等解釋
+Verify the correct site, account, period, timezone, and filters before examining clicks, impressions, CTR, positions, and actual conversion data. Segment by page, query, country, device, and search type to locate changes, considering data anomalies, seasonal demand, site changes, and indexing issues as alternative explanations
 
-依 [搜尋流量下降診斷](https://developers.google.com/search/docs/monitor-debug/debugging-search-traffic-drops)。輸出區分已查證變化、可能解釋、支持證據與待排除因素，時間重疊只支持相關性。空值與未取得資料保持原義
+Use [Debugging Search traffic drops](https://developers.google.com/search/docs/monitor-debug/debugging-search-traffic-drops). Separate verified changes, possible explanations, supporting evidence, and factors still to investigate. Overlapping timing supports correlation only. Preserve the meaning of null and unavailable data
 
-## 準備回饋
+## Prepare feedback
 
-依 [排名變動回饋指南](https://developers.google.com/search/docs/ranking/submit-feedback) 準備：
+Follow the [ranking feedback guide](https://developers.google.com/search/docs/ranking/submit-feedback) to prepare:
 
-- 相關更新識別與 hashtag，優先沿用事件公告標示
-- 確切查詢、國家、語言、受影響網址及對照網址
-- 成效快照、前後資料、發生時間與影響範圍
-- 具體說明結果如何影響使用者取得有用資訊，英國市場影響在適用時提供
+- The relevant update identity and hashtag, preferring the identifier in the event notice
+- Exact queries, country, language, affected URLs, and comparison URLs
+- Performance snapshots, before-and-after data, timing, and impact scope
+- A concrete explanation of how results affect users' access to useful information, including UK market effects when applicable
 
-草稿示例 hashtag 應標示為示例；實際事件資訊以公告為準。工程團隊彙整回饋以調查系統性問題，個別網址的人工排名調整不屬此機制的處理範圍
+Label illustrative hashtags as examples; use the actual event notice for event details. Engineering teams aggregate feedback to investigate systemic issues. Individual URL manual ranking adjustments fall outside this mechanism
 
-## 選擇適當管道
+## Select the appropriate channel
 
-排名更新回饋、人工處置複審、著作權、SafeSearch 與地區爭議處理各有適用條件，依官方回饋頁的對應章節與後台實際狀態選擇。涉及尚未生效的日期時，記錄預定日期與當下可用狀態
+Ranking-update feedback, manual-action reconsideration, copyright, SafeSearch, and regional dispute processes have their own conditions. Select the channel using the corresponding official feedback section and actual account status. Record scheduled dates and present availability for channels whose effective date is still in the future
 
-先完成可審閱的送件草稿；使用者授權正式送出後操作，再讀回送件狀態。工具回應只支持實際確認到的處理階段
+Prepare a reviewable submission draft first. When the user has authorized submission, send it and read back the resulting status. Tool responses establish only the processing stage actually confirmed

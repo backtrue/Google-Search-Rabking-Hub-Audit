@@ -44,7 +44,7 @@ Provide the target URL, exact local file path, attached document, or complete dr
 
 Live guidance checks require web access in the Codex session. Indexing, account settings, and performance findings use the relevant Search Console evidence, connected tools, or exports you provide. Missing data is recorded as pending verification, and available checks continue
 
-The current skill instructions and interface labels are in Traditional Chinese. The examples below explicitly request an English report
+The skill instructions, reference files, and interface labels are in English. The examples below explicitly request an English report
 
 ## Usage examples
 
@@ -106,12 +106,12 @@ The report begins with the audit date, scope, evidence obtained, and main findin
 1. An audit table with check IDs, applicable guidance, status, evidence locations, and official source links
 2. A remediation and verification table with priorities, specific changes or evidence requests, reasons, limitations, and acceptance criteria
 
-| Status | Current skill label | Meaning |
-|---|---|---|
-| Meets the check | 符合 | Available evidence supports the applicable condition within the audited scope |
-| Needs revision | 待修正 | A concrete issue is supported by evidence and applicable guidance |
-| Pending verification | 待查證 | A conclusion needs more evidence, access, or clarification |
-| Not applicable | 不適用 | The feature or condition falls outside the target's scope |
+| Status | Meaning |
+|---|---|
+| Meets the check | Available evidence supports the applicable condition within the audited scope |
+| Needs revision | A concrete issue is supported by evidence and applicable guidance |
+| Pending verification | A conclusion needs more evidence, access, or clarification |
+| Not applicable | The feature or condition falls outside the target's scope |
 
 P0, P1, and P2 express remediation priority within the audit. Official requirements, policies, quality recommendations, system background, and the audit's own analysis are identified separately
 

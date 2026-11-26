@@ -1,45 +1,45 @@
-# 政策適用判斷
+# Policy applicability
 
-整理基準：2026-11-26。先快速掃描目標可見線索，有線索或使用者指定時，再檢查相關項目；網站層級與歷史問題需要對應範圍的證據
+Reference baseline: 2026-11-26. First scan visible target evidence, then investigate items with relevant clues or an explicit user request. Site-level and historical conclusions need evidence of the corresponding scope
 
-## 判斷方式
+## Assessment method
 
-本表是調查入口。依 [Google 搜尋垃圾內容政策](https://developers.google.com/search/docs/essentials/spam-policies) 的當下定義、例外與地區條件，判斷具體行為是否適用
+Use this table to guide investigation. Assess specific conduct against the current definitions, exceptions, and regional conditions in [Google's spam policies](https://developers.google.com/search/docs/essentials/spam-policies)
 
-| 編號 | 官方政策項目 | 本次需要取得的證據 |
+| ID | Official policy topic | Evidence to obtain |
 |---|---|---|
-| S01 | 偽裝內容 | 使用者與搜尋引擎內容差異及目的 |
-| S02 | 入口頁濫用 | 相似頁面與實際導流目的地 |
-| S03 | 過期網域濫用 | 網域歷史、重用方式及價值 |
-| S04 | 遭入侵內容 | 未授權植入或異常程式證據 |
-| S05 | 隱藏文字與連結濫用 | 隱藏方式及對讀者的用途 |
-| S06 | 關鍵字堆砌 | 不自然重複的實際位置 |
-| S07 | 連結垃圾 | 交易目的、連結關係與標記 |
-| S08 | 機器產生流量 | 自動查詢方式與許可狀態 |
-| S09 | 惡意行為 | 軟體、導航或隱私的實際行為 |
-| S10 | 誤導功能 | 承諾與實際可用功能差異 |
-| S11 | 大量內容濫用 | 規模、原創價值及操控目的 |
-| S12 | 擷取內容 | 原始來源、搬用範圍及新增價值 |
-| S13 | 網站聲譽政策 | 第三方關係與借用排名訊號的目的 |
-| S14 | 欺騙性轉址 | 裝置／來源別轉址與使用者預期 |
-| S15 | 低價值聯盟內容 | 複製資料及實際新增價值 |
-| S16 | 使用者產生的垃圾內容 | 實際留言、帳號或上傳內容 |
-| S17 | 其他降級／移除情況 | 法律或個資移除、規避政策及詐騙的具體證據 |
+| S01 | Cloaking | Differences between user and search-engine content, and their purpose |
+| S02 | Doorway abuse | Similar pages and their actual traffic destinations |
+| S03 | Expired domain abuse | Domain history, reuse, and current value |
+| S04 | Hacked content | Evidence of unauthorized insertions or anomalous code |
+| S05 | Hidden text and link abuse | Hiding methods and their reader-facing purpose |
+| S06 | Keyword stuffing | Locations of unnatural repetition |
+| S07 | Link spam | Transaction purpose, link relationships, and qualification |
+| S08 | Machine-generated traffic | Automated query methods and permission status |
+| S09 | Malicious practices | Actual software, navigation, or privacy behavior |
+| S10 | Misleading functionality | Differences between promised and available functionality |
+| S11 | Scaled content abuse | Scale, original value, and manipulation purpose |
+| S12 | Scraping | Original sources, copied scope, and added value |
+| S13 | Site reputation policy | Third-party relationships and the purpose of using the host's ranking signals |
+| S14 | Sneaky redirects | Redirect behavior by device or referrer and user expectations |
+| S15 | Thin affiliation | Copied information and actual added value |
+| S16 | User-generated spam | Actual comments, accounts, or uploaded content |
+| S17 | Other grounds for demotion or removal | Evidence of legal or personal-information removals, policy circumvention, or fraud |
 
-判定保留「已觀察事實、適用條件、尚缺證據」。只有文章或單頁時，網站規模、交易目的、網域歷史等缺項列待查證；網站整體的結論須有網站整體證據
+Preserve observed facts, applicability conditions, and missing evidence in each assessment. For a single article or page, keep missing evidence about site scale, transaction purpose, or domain history pending verification. Site-wide conclusions require site-wide evidence
 
-## 常見情境的適用條件
+## Conditions for common situations
 
-下列為取證時需核對的條件，依上述官方政策對應章節判讀
+Check these conditions against the corresponding sections of the official policies linked above
 
-- AI 或人工製作：S11 依規模、操控目的與使用者價值判斷
-- 展開區、頁籤與輔助閱讀內容：S05 查其讀者用途
-- 付費牆：S01 核對 Google 與有權限讀者的可見內容，以及適用的付費內容指引
-- 聯盟與贊助：S07／S15 核對連結標記、原創分析、測試或比較價值
-- 第三方稿件：S13 查寄放目的、地區條件及實際證據，並讀取政策例外
-- 網域重用：S03 查重用目的與目前內容價值
-- 轉址：S14 區分搬站、登入與合併等正常用途，依實際目的與內容差異判斷
+- AI-generated or human-produced content: assess S11 using scale, manipulation purpose, and user value
+- Expandable sections, tabs, and accessibility content: examine their reader-facing purpose for S05
+- Paywalls: for S01, compare content available to Google and authorized readers, and consult the applicable paywalled-content guidance
+- Affiliate links and sponsorships: for S07 and S15, examine link qualification, original analysis, tests, or comparison value
+- Third-party articles: for S13, investigate hosting purpose, regional conditions, actual evidence, and policy exceptions
+- Domain reuse: for S03, investigate reuse purpose and current content value
+- Redirects: for S14, distinguish normal uses such as migrations, sign-ins, and consolidation, assessing actual purpose and content differences
 
-## 回報與修正
+## Reporting and remediation
 
-公開頁面的可見線索支持提出待查證或待修正項目；Google 人工處置狀態以 Search Console 實際報告為準。使用者要求檢核時交付證據及修正方向；正式檢舉、申覆、索引控制或發布依各次明確授權操作
+Visible page evidence can support findings that need verification or revision. Establish Google's manual-action status through the actual Search Console report. An audit request produces evidence and remediation guidance; formal reports, appeals, indexing-control changes, and publishing follow the authorization for each action

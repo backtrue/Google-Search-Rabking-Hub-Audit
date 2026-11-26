@@ -1,4 +1,4 @@
 interface:
-  display_name: "Google 搜尋規範檢核"
-  short_description: "依官方規範檢查網站與文章，提供證據、修改方向及完成條件"
-  default_prompt: "使用 $audit-google-search-ranking 檢查我提供的網址或文章，列出已查證問題、待查證項目、官方來源與修正後的驗收方式"
+  display_name: "Google Search Ranking Audit"
+  short_description: "Google Search audit: evidence, fixes, and acceptance criteria"
+  default_prompt: "Use $audit-google-search-ranking to review the supplied URL or draft and report verified findings, pending checks, official sources, and acceptance criteria"
